@@ -8,7 +8,7 @@
  * Calculates hourly waqe and salary
  */
 function calculateSalary () {
- let hours = parseFloat(document.getElementById('hours').value);
+  let hours = parseFloat(document.getElementById('hours').value);
             let rate = parseFloat(document.getElementById('rate').value);
             if (isNaN(hours) || isNaN(rate)) {
                 document.getElementById('output').innerHTML = "Please enter valid numbers";
