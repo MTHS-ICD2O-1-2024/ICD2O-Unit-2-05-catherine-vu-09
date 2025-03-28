@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-04-HTML-MDL -->
+<!-- ICS2O-Unit2-05-HTML-MDL -->
 <html lang="en-ca">
   
 <head>
@@ -17,11 +17,9 @@
   <link rel="manifest" href="./site.webmanifest" />
   <title>Finding Salary, in JS</title>
 </head>
-
-
-
-
+  
 <body>
+
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -35,36 +33,30 @@
         <img src="./images/income-tax-text-written-on-pink-black-round-stamp-sign-2M189TB.jpg" alt="laptop image" />
       </div>
       <br>
-      <div class="page-content">Enter the hours worked and hourly wage.</div>
+    </head>
+    </body>
+<div class="container">
+  <h4>Please enter your employment information.</h4>
 
-      <form>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="number" id="hoursWorked">
+    <label class="mdl-textfield__label" for="hoursWorked">Hours Worked</label>
+  </div>
 
-
-        <div class="input-group">
-          <label for="hours">Hours worked (hours)</label>
-          <input type="number" id="hours" placeholder="Enter hours">
-        </div>
-        <div class="input-group">
-          <label for="hourly wage"> hourly wage</label>
-          <input type="number" id="height" placeholder="Enter hourly wage">
-        </div>
-        </br>
-
-
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateArea()" type="button">
-          Calculate!
-
-
-        </button>
-        <p id="result"></p> <!-- This is where the result will be displayed -->
-
-
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="number" id="hourlyRate">
+    <label class="mdl-textfield__label" for="hourlyRate">Hourly Rate ($)</label>
+  </div>
+<div class="page-content-answer">
+  <div id="hoursworked"></div>
+  <div id="hoursrate"></div>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculateSalary()">
+    CALCULATE
+  </button>
+  form>
+  <br/>
     </main>
   </div>
 </body>
-
-
-
-
+  
 </html>
