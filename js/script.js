@@ -13,7 +13,7 @@ function calculateSalary () {
     
     if (!isNaN(hours) && !isNaN(rate)) {
       let totalPay = hours * rate;
-      let tax = totalPay * 0.18; // Assuming a 18% tax rate
+      let tax = totalPay * 0.18; // Assuming a 10% tax rate
       let afterTaxPay = totalPay - tax;
       
       document.getElementById("total-pay").innerText = "Your payment is: $" + totalPay.toFixed(2);
