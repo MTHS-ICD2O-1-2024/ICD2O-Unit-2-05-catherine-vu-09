@@ -8,15 +8,18 @@
  * Calculates hourly waqe and salary
  */
 function calculateSalary () {
- // input
-            const hoursWorked = parseFloat(document.getElementById('hours').value);
-            const hourlyRate = parseFloat(document.getElementById('rate').value);
-
-            // process
-            const grossEarnings = hoursWorked * hourlyRate;
-            const taxAmount = grossEarnings * 0.18; // 18% tax
-            const netEarnings = grossEarnings - taxAmount;
-
-            // output
-            document.getElementById('output').innerHTML = 'Your pay will be: $' + netEarnings.toFixed(2) + '<br> The government will take: $' + taxAmount.toFixed(2);
-        }
+  let hours = parseFloat(document.getElementById("hours-worked").value);
+    let rate = parseFloat(document.getElementById("rate-per-hour").value);
+    
+    if (!isNaN(hours) && !isNaN(rate)) {
+      let totalPay = hours * rate;
+      let tax = totalPay * 0.18; // Assuming a 18% tax rate
+      let afterTaxPay = totalPay - tax;
+      
+      document.getElementById("total-pay").innerText = "Your payment is: $" + totalPay.toFixed(2);
+      document.getElementById("government-tax").innerText = "The government will take: $" + tax.toFixed(2);
+    } else {
+      document.getElementById("total-pay").innerText = "Please enter valid numbers.";
+      document.getElementById("government-tax").innerText = "";
+    }
+  }

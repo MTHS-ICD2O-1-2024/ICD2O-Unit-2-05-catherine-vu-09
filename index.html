@@ -33,31 +33,32 @@
         <img src="./images/income-tax-text-written-on-pink-black-round-stamp-sign-2M189TB.jpg" alt="laptop image" />
       </div>
       <br>
-    </head>
-    </body>
-<div class="container">
-  <h4>Please enter your employment information.</h4>
-
-  <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="number" id="hoursWorked">
-    <label class="mdl-textfield__label" for="hoursWorked">Hours Worked</label>
+<div class="page-content">Enter your employment information.</div>
+<form>
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours-worked" />
+  <label class="mdl-textfield__label" for="hours-worked">Hours Worked</label>
+  <span class="mdl-textfield__error">Input is not a number.</span>
   </div>
-
+    <br />
   <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="number" id="hourlyRate">
-    <label class="mdl-textfield__label" for="hourlyRate">Hourly Rate ($)</label>
+  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="rate-per-hour" />
+  <label class="mdl-textfield__label" for="rate-per-hour">Rate per Hour ($)</label>
+  <span class="mdl-textfield__error">Input is not a number.</span>
   </div>
+  <br />
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+  onclick="calculateSalary()" type="button">
+  Calculate
+    </button>
+  </form>
+  <br />
 <div class="page-content-answer">
-  <div id="hoursworked"></div>
-  <div id="hoursrate"></div>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculateSalary()">
-    CALCULATE
-  </button>
-  <div class="result" id="output"></div>
-  <form>
-  <br/>
-    </main>
+  <div id="total-pay"></div>
+  <div id="government-tax"></div>
   </div>
-</body>
-  
+  </main>
+  </div>
+  </body>
+
 </html>
