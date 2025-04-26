@@ -3,37 +3,37 @@
 <html lang="en-ca">
   
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="The Salary program" />
-  <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Catherine Vu" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link 
-  rel="stylesheet" 
-  href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link 
-  rel="stylesheet" 
-  href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" />
-  <link 
-  rel="stylesheet" 
-  href="./css/style.css" 
-  />
-  <link rel="apple-touch-icon" 
-  sizes="180x180"
-  href="./apple-touch-icon.png"
-  />
-  <link rel="icon"
-  type="image/png" 
-  sizes="32x32" 
-  href="./favicon-32x32.png" 
-  />
-  <link 
-  rel="icon" type="image/png" 
-  sizes="16x16" 
-  href="./favicon-16x16.png" 
-  />
-  <link rel="manifest" href="./site.webmanifest" />
-  <title>Finding Salary, in JS</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The Salary program" />
+    <meta name="keywords" content="mths, icd2o" />
+    <meta name="author" content="Catherine Vu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link 
+    rel="stylesheet" 
+    href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" />
+    <link 
+    rel="stylesheet" 
+    href="./css/style.css" 
+      />
+    <link rel="apple-touch-icon" 
+    sizes="180x180"
+    href="./apple-touch-icon.png"
+      />
+    <link rel="icon"
+    type="image/png" 
+    sizes="32x32" 
+    href="./favicon-32x32.png" 
+      />
+    <link 
+    rel="icon" type="image/png" 
+    sizes="16x16" 
+    href="./favicon-16x16.png" 
+      />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>Finding Salary, in JS</title>
 </head>
   
 <body>
@@ -54,29 +54,29 @@
   <div class="page-content">Enter your employment information.</div>
     <form>
       <div class="mdl-textfield mdl-js-textfield">
-  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours-worked" />
-  <label class="mdl-textfield__label" for="hours-worked">Hours Worked</label>
-  <span class="mdl-textfield__error">Input is not a number.</span>
-  </div>
-    <br />
-  <div class="mdl-textfield mdl-js-textfield">
-  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="rate-per-hour" />
-  <label class="mdl-textfield__label" for="rate-per-hour">Rate per Hour ($)</label>
-  <span class="mdl-textfield__error">Input is not a number.</span>
-  </div>
-  <br />
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-  onclick="calculateSalary()" type="button">
-  Calculate
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours-worked" />
+      <label class="mdl-textfield__label" for="hours-worked">Hours Worked</label>
+      <span class="mdl-textfield__error">Input is not a number.</span>
+      </div>
+      <br />
+      <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hourly-wage" />
+      <label class="mdl-textfield__label" for="hourly-wage"> Hourly Wage ($)</label>
+      <span class="mdl-textfield__error">Input is not a number.</span>
+      </div>
+      <br />
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+    onclick="calculateSalary()" type="button">
+    Calculate
     </button>
-  </form>
-  <br />
-<div class="page-content-answer">
-  <div id="total-pay"></div>
-  <div id="government-tax"></div>
-  </div>
-  </main>
-  </div>
-  </body>
+    </form>
+    <br />
+    <div class="page-content-answer">
+    <div id="weeklypay"></div>
+    <div id="incometax"></div>
+    </div>
+    </main>
+    </div>
+    </body>
 
 </html>
